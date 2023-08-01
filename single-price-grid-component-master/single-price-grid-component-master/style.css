@@ -1,0 +1,105 @@
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(204, 43%, 93%);
+}
+.wrapper {
+  width: 30%;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+header {
+  padding: 20px 30px;
+}
+.container {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 2px 12px 10px hsl(218, 22%, 67%);
+}
+header h2 {
+  color: hsl(179, 62%, 43%);
+}
+header h3 {
+  color: hsl(71, 73%, 54%);
+}
+header p {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.5;
+}
+.left {
+  background-color: hsl(179, 62%, 43%, 0.8);
+  width: 50%;
+  height: 225px;
+  padding: 30px;
+}
+.right {
+  background-color: hsla(179, 62%, 43%, 0.5);
+  width: 50%;
+  height: 225px;
+  padding: 30px;
+}
+
+p.Price {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.left h2,
+.right h2 {
+  font-size: 18px;
+}
+.left span {
+  color: grey;
+  margin-left: 10px;
+  font-size: 16px;
+}
+.info {
+  margin-top: 0;
+}
+a {
+  padding: 20px 80px;
+  margin-top: 10px;
+  display: inline-block;
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  text-shadow: 2px 12px 10px hsl(218, 22%, 67%);
+}
+a:hover {
+  color: hsl(71, 73%, 54%);
+  background-color: white;
+}
+ul {
+  list-style: none;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 785px) {
+  section {
+    flex-direction: column;
+  }
+  a {
+    padding: 15px 30px;
+  }
+  .left,
+  .right {
+    width: 80%;
+    padding: 0 20px;
+  }
+}
